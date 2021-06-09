@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./src/index.js" type="module"></script>
+</head>
+<body>
+<h1>Калькулятор дат:</h1>
+<form id="form-date">
+    <label for="date1">
+        <b>Первая дата:</b>
+        <input type="date" name="date1" id="date1">
+    </label>
+    <label for="date2">
+        <b>Вторая дата:</b>
+        <input type="date" name="date2" id="date2">
+    </label>
+    <button type="submit">
+        Рассчитать промежуток
+    </button>
+</form>
+
+<p class="message"></p>
+
+<div class="timer">
+    <h1>Таймер</h1>
+    <p>Осталось:</p>
+    <p id="countDown"></p>
+    </div>
+<div class="buttons">
+    <button class="start">Запустить</button>
+    <button class="stop">Остановить</button>
+</div>
+</div>
+
+
+</body>
+</html>

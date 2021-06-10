@@ -1,11 +1,11 @@
 import 'https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.js';
-
-let sound = new Howl({
-    src: ['sound.mp3']
-});
+let sound = null;
 let buttons = document.querySelectorAll('.buttons');
 buttons.forEach((btn) => {
     btn.addEventListener('click', (e) => {
+        sound = new Howl({
+            src: ['sound.mp3']
+        });
         if (e.target.classList.contains('start')) {
             timer.start();
         } else {
@@ -19,7 +19,7 @@ class Timer {
         this.box = document.querySelector(selector);
         this.time = time;
         this.interval;
-        this.render()
+        this.render();
     }
 
     render() {

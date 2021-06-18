@@ -1,0 +1,6 @@
+node_modules
+dist
+.cache
+.idea
+gulp_ex
+parcel_ex

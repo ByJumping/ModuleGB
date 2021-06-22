@@ -9,31 +9,38 @@
     <script src="./src/index.js" type="module"></script>
 </head>
 <body>
-<h1>Калькулятор дат:</h1>
-<form id="form-date">
-    <label for="date1">
-        <b>Первая дата:</b>
-        <input type="date" name="date1" id="date1">
-    </label>
-    <label for="date2">
-        <b>Вторая дата:</b>
-        <input type="date" name="date2" id="date2">
-    </label>
-    <button type="submit">
-        Рассчитать промежуток
-    </button>
-</form>
+<button class="btn-date">Калькулятор дат</button>
+<button class="btn-timer">Таймер</button>
+<div class="body">
+    <div class="date">
+        <h1>Калькулятор дат:</h1>
+        <form id="form-date">
+            <label for="date1">
+                <b>Первая дата:</b>
+                <input type="date" name="date1" id="date1">
+            </label>
+            <label for="date2">
+                <b>Вторая дата:</b>
+                <input type="date" name="date2" id="date2">
+            </label>
+            <button type="submit">
+                Рассчитать промежуток
+            </button>
+        </form>
 
-<p class="message"></p>
-
-<div class="timer">
-    <h1>Таймер</h1>
-    <p>Осталось:</p>
-    <p id="countDown"></p>
+        <p class="message"></p>
     </div>
-<div class="buttons">
-    <button class="start">Запустить</button>
-    <button class="stop">Остановить</button>
+
+    <div class="timer">
+        <h1>Таймер</h1>
+        <p>Осталось:</p>
+        <p id="countDown"></p>
+        <div class="buttons">
+            <button class="start">Запустить</button>
+            <button class="stop">Остановить</button>
+        </div>
+    </div>
+
 </div>
 </div>
 

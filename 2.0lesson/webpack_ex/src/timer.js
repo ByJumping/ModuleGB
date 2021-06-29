@@ -1,4 +1,4 @@
-import 'https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.1/howler.js';
+import {Howl, Howler} from 'howler';
 let sound = null;
 let buttons = document.querySelectorAll('.buttons');
 buttons.forEach((btn) => {
